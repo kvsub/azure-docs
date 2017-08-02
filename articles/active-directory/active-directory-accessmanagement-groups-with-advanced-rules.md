@@ -232,7 +232,7 @@ is equivalent to
 ## Extension attributes and custom attributes
 Extension attributes and custom attributes are supported in dynamic membership rules.
 
-Extension attributes are synced from on-premises Window Server AD and take the format of "ExtensionAttributeX", where X equals 1 - 15.
+Extension attributes are synced from on-premises Window Server AD and take the format of "ExtensionAttributeX", where X equals 1 - 15. Note multi-value property (CarLicense for example) for an object synchronized from Active Directory is not yet supported for building dynamic group membership rules.
 An example of a rule that uses an extension attribute would be
 
 (user.extensionAttribute15 -eq "Marketing")
